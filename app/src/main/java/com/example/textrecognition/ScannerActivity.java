@@ -82,6 +82,7 @@ public class ScannerActivity extends AppCompatActivity {
                   for (Text.Line line :block.getLines()){
 
                       //Commited for feature1
+                      //Committed for feature2
                       String lineText = line.getText();
                       Point[] lineCornerPoint = line.getCornerPoints();
                       Rect lineRect = line.getBoundingBox();
