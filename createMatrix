@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+	  
+	 creatematrix();
+	}
+	
+	//Create matrix
+	
+	static void creatematrix(){
+	    int count = 0;
+	     for (int row=0;row<4;row++){
+	         for(int col=0;col<3;col++){
+	             System.out.print(" "+count);
+	             count++;
+	         }
+	         System.out.println();
+	     } 
+	    
+	}
+}
