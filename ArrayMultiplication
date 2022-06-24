@@ -1,0 +1,43 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int[][] set1 = {{1,2,3},{4,5,6}};
+	    int[][] set2 = {{7,8},{9,10},{11,12}};
+	   
+	    multiplicationOfmatrix(set1,set2);
+	 
+	}
+	
+	//Create matrix
+	
+	static void multiplicationOfmatrix(int[][]set1,int[][]set2){
+	    //check for col1 and row2. They should be same
+	     int row1 = 2;
+	     int col1 = 3;
+	     int row2 = 3;
+	     int col2 = 2;
+	     if (col1!=row2){
+	         System.out.println("Multiplication not possible");
+	     } else{
+	         //matrix size will be row1 and col2
+	         int add[][] = new int[3][4];
+	         
+	         for(int row =0;row<2;row++){
+	               
+	             for(int col=0;col<2;col++){
+	               int sum =0;
+	                 for(int j=0;j<3;j++){
+	                     sum = sum + (set1[row][j]*set2[j][col]);
+	                     
+	                 }
+	                 System.out.print(" "+sum);
+	             }
+	             System.out.println(); 
+	         }
+	         
+	        
+	     }
+	     
+	    
+	}
+}
