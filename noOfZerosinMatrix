@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                            Online Java Debugger.
+                Code, Run and Debug Java program online.
+Write your code in this editor and press "Debug" button to debug program.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+	  int[][][] a = {{{5,0,2},{0,0,0},{4,1,0},{7,7,7}},
+	                  {{3,0,0},{8,5,0},{0,0,0},{2,0,9}}};
+	                  noOfZeros(a);
+	}
+	
+	static void noOfZeros( int[][][] b){
+	    int count =0;
+	    for (int row=0;row<2 ;row++ ){
+	        for(int col =0;col<4;col++){
+	             for(int k =0;k<3;k++){
+	                 if (b[row][col][k]==0){
+	                     count++;
+	                    
+	                 } 
+	                 
+	             }
+	        }
+	    } 
+	     System.out.println(count);
+	    
+	}
+}
