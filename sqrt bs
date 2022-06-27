@@ -1,0 +1,32 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int num = 11;
+	  System.out.println(sqrt(num));
+	}
+	 public static int sqrt(int num) {
+        
+        int start = 1;
+        int end = num;
+        int ans =0;
+        
+        while(start<=end){
+            int mid = start +(end-start)/2;// (start+end)/2;
+             if (mid*mid == num)
+                return  mid;
+                
+                if (num>mid*mid){
+                    start = mid+1;
+                    ans = mid;
+                } 
+                else{
+                    end = mid-1;
+                 } 
+            
+           
+        }
+        
+        return ans; 
+        
+    }
+}
